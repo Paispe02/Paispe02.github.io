@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+/*FICHA PRINCIPAL DE ESTILOS DE TODA LA WEB*/
+/* ----Sections-------*/
+
+/*############### GENERAL #######################*/
+
+body{
+    background-color: #567235;
+    margin: 0px;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+.content {
+  margin-top: 60px; /
+}
+
+div{
+    display: flow-root;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Roboto','Arial';
+    text-align: center;
+    text-shadow: 1px 1px 10px white;
+    
+
+}
+h2{
+    font-family: 'Roboto', 'Arial';
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 1px 1px 10px white;
+}
+h3{
+    font-family: 'Roboto', 'Arial';
+    text-align: center;
+    font-size: 20px;
+}
+p{
+    font-family: 'Roboto','Arial';
+}
+
+/*################# HEADER ####################*/
+header{
+    background-color: lightgrey;
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    padding: 10px 0;
+    left: 0;
+    transition: top 0.3s;
+    z-index: 1000;
+    padding: 10px 0; 
+    box-sizing: border-box; 
+    width:100%;
+  
+}
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0;
+        font-size: 1em; 
+    }
+    .logo {
+        max-height: 3em; 
+    }
+
+}
+/*-----------------------------------------------------*/
+
+
+
+
+/*################  NAVBAR  ################*/
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center; 
+    color: white;
+}
+nav li {
+    flex-grow: 1; 
+    text-align: center;
+  }
+  
+  nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white; 
+  }
+  
+  .logo {
+    max-height: 5em; 
+    max-width: 5em;
+    padding:0;
+    
+  }
+
+  .contenedor li:hover {
+    background: rgb(23, 201, 4);
+  }
+  .header-visible {
+    transform: translateY(0);
+  }
+
+/*########################################*/
+
+
+/*################ FOOTER ###################*/
+
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex: 1 0 0;
+    justify-content: center;
+    align-items: center;
+    padding: 1em ;
+  }
+  
+  .footer-logo img {
+    max-width: 100px; 
+  }
+
+  
+  .footer-links a, .footer-contact a {
+    color: #fff;
+    margin: 1em 2em;
+    text-decoration: none;
+  }
+  
+
+  .footer-links a:hover, .footer-contact a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+@media (max-width: 768px) {
+    footer{
+        flex-direction: column;
+    }
+  
+    
+    .footer-logo, .footer-links, .footer-contact {
+      flex: 1 0 100%; 
+      text-align: center;
+      padding: 1em 0;
+    }
+  }
+
+/*####################################*/

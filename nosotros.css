@@ -1,0 +1,103 @@
+
+
+
+
+
+.BloqueTexto {
+    background-color:#7da54f;
+    padding:1em;
+    color: #FFFFFF; 
+    padding: 20px; 
+    line-height: 1.6; 
+    font-family: 'Roboto', 'Arial'; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+    max-width: 90%; 
+  }
+  
+.BloqueTexto h2{
+    color: #F5F5F5; 
+    margin-bottom: 0.5em; 
+    font-size: 1.75em; 
+    text-shadow: none;
+  }
+  
+  #Porquefundacion.BloqueTexto p {
+    margin-bottom: 1em; 
+    text-align: justify;
+    font-size: 1em;
+  }
+  
+
+
+
+#SobreNosotros p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 20px; 
+}
+
+
+#Comprometidosconelcampo {
+    position: relative; /* Establece el posicionamiento relativo para el contenedor */
+    background-image: url('/img/campo.jpeg'); /* Establece la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    display: flex; /* Utiliza Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    min-height: 40em;
+}
+
+#Comprometidosconelcampo h3 {
+    color: white; /* Establece el color del texto */
+    font-size: 3.5em; /* Aumenta el tamaño del texto */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1); /* Añade una sombra al texto para mejorar la legibilidad */
+}
+
+
+#NuestrosProductos h3{
+    color:white;
+
+}
+
+
+  
+  #tabla p, #tabla {
+    text-align: justify;
+    line-height: 1.8;
+    color:white;
+  }
+  
+  
+  #tabla {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #tabla th, #tabla td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #tabla th {
+    background-color: #4457ae;
+  }
+  
+.fotos {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+.fotos img {
+    max-width: 600px; 
+    height: auto;
+    border-radius: 6px;
+  }
+  
+.fotos p {
+    font-style: italic;
+    color: #666;
+  }

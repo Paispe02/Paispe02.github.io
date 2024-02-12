@@ -1,0 +1,14 @@
+body{
+    background-image: url(/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+h1{
+
+    padding: 5em;
+    color:white;
+    text-decoration: none;
+    text-shadow: black;
+}
