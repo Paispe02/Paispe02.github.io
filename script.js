@@ -27,4 +27,34 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 
+//###########Language selector#####################
+document.addEventListener('DOMContentLoaded', () => {
+  const idioma = localStorage.getItem('idioma') || 'en';
+  document.getElementById('selector-idioma').value = idioma;
+  loadLanguage(idioma);
+});
+
+
+document.getElementById('selector-idioma').addEventListener('change', function() {
+  const idioma = this.value;
+  loadLanguage(idioma);
+  localStorage.setItem('idioma', idioma);
+});
+let path = window.location.pathname;
+let page = path.split("/").pop().split(".").shift();
+
+function loadLanguage(language) {
+  fetch(`/locales/${language}/${page}.json`)
+    .then(response => response.json())
+    .then(translations => {
+      document.querySelectorAll('[data-textos]').forEach(element => {
+        const key = element.getAttribute('data-textos');
+        element.textContent = translations[key];
+      });
+    })
+    .catch(error => {
+      console.error('Error loading the language file:', error);
+    });
+}
+
   

@@ -16,29 +16,34 @@
 </head>
 
 <body>
-    <header id="header" class="header">
-              
-            <nav class="nav">
-                <ul class="contenedor"> 
-                <li class="logo"> <a href="index.html"> <img id="logo" src="/img/logo.png" alt="LaurelDafne"> </a></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-    </header>
+  <header id="header" class="header">
+
+    <nav class="nav">
+        <ul class="contenedor"> 
+        <li class="logo"> <a href="index.html"> <img id="logo" src="/img/logo.png" alt="LaurelDafne"> </a></li>
+        <li><a data-textos="Inicio" href="index.html"></a></li>
+        <li><a data-textos="Nosotros" href="nosotros.html"></a></li>
+        <li><a data-textos="Contacto" href="contacto.html"></a></li>
+        <li><select id="selector-idioma">
+            <option value ="es">Español</option>
+            <option value ="en">English</option> 
+            </select>
+        </li>
+        </ul>
+    </nav>
+</header>
 <!--------------------------MAIN------------------------------------>
     <main>
        <form action="form.html" method="get">
-            <h2>Formulario de Contacto</h2>
+            <h1 data-textos="Titulo"></h1>
             <fieldset>
-                <legend>Contactanos</legend>
+                <legend data-textos="Contactanos"></legend>
                 <div class="form-row">
-                  <label for="name_id">Nombre:</label>
+                  <label for="name_id" data-textos="Nombre"></label>
                   <input type="text" id="name_id" name="nombre">
                 </div>
                 <div class="form-row">
-                  <label for="phone_id">Teléfono:</label>
+                  <label for="phone_id" data-textos="Telefono"></label>
                   <input type="tel" id="phone_id" name="Telefono">
                 </div>
                 <div class="form-row">
