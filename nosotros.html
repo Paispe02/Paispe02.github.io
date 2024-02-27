@@ -16,18 +16,23 @@
 
 <body>
     <header id="header" class="header">
-              
-            <nav class="nav">
-                <ul class="contenedor"> 
-                <li class="logo"> <a href="index.html"> <img id="logo" src="/img/logo.png" alt="LaurelDafne"> </a></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-    </header>
+
+        <nav class="nav">
+            <ul class="contenedor"> 
+            <li class="logo"> <a href="index.html"> <img id="logo" src="/img/logo.png" alt="LaurelDafne"> </a></li>
+            <li><a data-textos="Inicio" href="index.html"></a></li>
+            <li><a data-textos="Nosotros" href="nosotros.html"></a></li>
+            <li><a data-textos="Contacto" href="contacto.html"></a></li>
+            <li><select id="selector-idioma">
+                <option value ="es">Español</option>
+                <option value ="en">English</option> 
+                </select>
+            </li>
+            </ul>
+        </nav>
+</header>
 <!--------------------------MAIN------------------------------------>
-    <main id="nosotros">
+   <!-- <main id="nosotros">
             <section id="SobreNosotros" class="BloqueTexto">
                 <h2>Sobre Nosotros</h2>
                 <p>Somos Laureldafne, una empresa dedicada con pasión a la plantación, recolección y venta de Laurel Gallego de la más alta calidad. Desde nuestros inicios, hemos estado comprometidos con la sostenibilidad y la excelencia en cada paso de nuestro proceso, desde el cuidado de nuestras plantaciones hasta la selección de cada hoja de laurel que llega a tus manos. Nuestra misión es llevar el aroma y el sabor único del Laurel Gallego a cocinas de todo el mundo, asegurando siempre la máxima frescura y calidad.</p>
@@ -73,7 +78,47 @@
             </section>
 
           
+    </main>-->
+    <main id="nosotros">
+        <section id="SobreNosotros" class="BloqueTexto">
+            <h2 data-textos="SobreNosotros">Sobre Nosotros</h2>
+            <p data-textos="SobreNosotrosContent">Somos Laureldafne, una empresa dedicada con pasión a la plantación, recolección y venta de Laurel Gallego de la más alta calidad. Desde nuestros inicios, hemos estado comprometidos con la sostenibilidad y la excelencia en cada paso de nuestro proceso, desde el cuidado de nuestras plantaciones hasta la selección de cada hoja de laurel que llega a tus manos. Nuestra misión es llevar el aroma y el sabor único del Laurel Gallego a cocinas de todo el mundo, asegurando siempre la máxima frescura y calidad.</p>
+        </section>
+        <section id="Comprometidosconelcampo">
+            <h3 data-textos="Comprometidosconelcampo">Comprometidos con el campo</h3>
+            
+        </section>
+        <section id="Porquefundacion" class="BloqueTexto">
+            <h2 data-textos="Porquefundacion">Por qué se funda Laureldafne</h2>
+            <p data-textos="PorquefundacionContent">Laureldafne nace de un profundo respeto y amor por la cocina tradicional de nuestros pueblos, esa que ha perdurado a través de generaciones y que se ha convertido en el alma de nuestra cultura gastronómica. Inspirados por los sabores auténticos de la España rural, la visión de nuestra empresa es traer a cada hogar un pedazo de esa historia culinaria que se ha gestado en las cocinas de nuestras abuelas y abuelos.</p>
+        </section>
+        <section id="NuestrosProductos">
+            <h3 data-textos="NuestrosProductos">Nuestros Productos</h3>
+            <table id="tabla">
+                <tr>
+                    <th data-textos="Tipo">Tipo</th>
+                    <th data-textos="Descripcion">Descripción</th>
+                    <th data-textos="UsosCulinarios">Usos Culinarios</th>
+                </tr>
+                <tr>
+                    <td data-textos="LaurelFresco">Laurel Fresco</td>
+                    <td data-textos="HojasRecienRecolectadas">Hojas verdes recién recolectadas</td>
+                    <td data-textos="SopasYGuisos">Sopas y guisos</td>
+                </tr>
+                <tr>
+                    <td data-textos="LaurelSeco">Laurel Seco</td>
+                    <td data-textos="HojasCuradasSecadas">Hojas curadas y secadas al sol</td>
+                    <td data-textos="ConservasAdobos">Conservas y adobos</td>
+                </tr>
+                <tr>
+                    <td data-textos="LaurelPolvo">Laurel en Polvo</td>
+                    <td data-textos="HojasMolidasEspecias">Hojas molidas para especias</td>
+                    <td data-textos="MarinadasRubsCarne">Marinadas y rubs de carne</td>
+                </tr>
+            </table>
+        </section>
     </main>
+    
 
 <!---------------------------------------------------------------------->
 <footer>
@@ -81,12 +126,13 @@
         <a href="index.html"><img src="img/logo.png" alt="LaurelDafne"></a>
     </div>
       <div class="footer-links">
-        <a href="aviso-legal.html">Aviso Legal</a>
-        <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+        <a data-textos="AvisoLegal" href="aviso-legal.html"></a>
+        <a data-textos="Terminos" href="terminos-y-condiciones.html"></a>
       </div>
       <div class="footer-contact">
-        <p>Contacto: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></p>
+        <p> <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></p>
     </div>
+
 </footer>
 
     <script src="script.js"></script>

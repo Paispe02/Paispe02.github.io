@@ -47,16 +47,16 @@
                   <input type="tel" id="phone_id" name="Telefono">
                 </div>
                 <div class="form-row">
-                  <label for="email_id">Email:</label>
+                  <label for="email_id" data-textos="email"></label>
                   <input type="email" id="email_id" name="eMail" required>
                 </div>
                 <div class="form-row">
-                  <label for="instructions_id">Instrucciones:</label>
+                  <label for="instructions_id" data-textos="instrucciones"></label>
                   <textarea id="instructions_id" name="instrucciones" rows="5" required></textarea>
                 </div>
                 <div class="form-row">
                   <input type="checkbox" id="politicas" name="politicas" value="AceptaPolitica" required>
-                  <label for="politicas">Acepto la política de privacidad, términos y demás movidas legales</label>
+                  <label for="politicas" data-textos="politicas"></label>
                 </div>
                 <div class="form-buttons">
                   <input type="submit" value="Enviar">
@@ -88,16 +88,16 @@
 
 <!---------------------------------------------------------------------->
 <footer>
-    <div class="footer-logo">
-        <a href="index.html"><img src="img/logo.png" alt="LaurelDafne"></a>
+  <div class="footer-logo">
+      <a href="index.html"><img src="img/logo.png" alt="LaurelDafne"></a>
+  </div>
+    <div class="footer-links">
+      <a data-textos="AvisoLegal" href="aviso-legal.html"></a>
+      <a data-textos="Terminos" href="terminos-y-condiciones.html"></a>
     </div>
-      <div class="footer-links">
-        <a href="aviso-legal.html">Aviso Legal</a>
-        <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
-      </div>
-      <div class="footer-contact">
-        <p>Contacto: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></p>
-    </div>
+    <div class="footer-contact">
+      <p> <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></p>
+  </div>
 
 </footer>
 

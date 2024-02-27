@@ -20,32 +20,39 @@
             <nav class="nav">
                 <ul class="contenedor"> 
                 <li class="logo"> <a href="index.html"> <img id="logo" src="/img/logo.png" alt="LaurelDafne"> </a></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a data-textos="Inicio" href="index.html"></a></li>
+                <li><a data-textos="Nosotros" href="nosotros.html"></a></li>
+                <li><a data-textos="Contacto" href="contacto.html"></a></li>
+                <li><select id="selector-idioma">
+                    <option value ="es">Español</option>
+                    <option value ="en">English</option> 
+                    </select>
+                </li>
                 </ul>
             </nav>
     </header>
     <main>
         
         <div id="carruselprincipal">
-            <h1> Bienvenido a LaurelDafne</h1>
-            <img id="fotoLaurel" src="/img/fotolaurelcarrusel.jpg"> 
+            <h1 data-textos="Bienvenido"></h1>
+            <img id="fotoLaurel" src="/img/fotolaurelcarrusel.jpg">
+             
         </div>
           
         <div id="PorqueLaurel">
-            <h2> Beneficios del Laurel</h2>
+            <h2 data-textos="Beneficios"></h2>
             <iframe id="VideoBeneficiosLaurel" width="100%" height="500px" src="https://www.youtube.com/embed/hVi3Li96e-s?si=nmLbvvEUD8cKIQso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="info-block">
-            <h2>El laurel común (Laurus nobilis)</h2>
-            <p>También llamado «laurel europeo» o «laurel de cocina», de la familia de las lauráceas, es un <strong>árbol perenne, frondoso y ornamental, dioico, siempre-verde</strong>, de 5 a 10 m de altura, de tronco recto con la corteza gris y la copa densa, oscura; ramaje erecto; hojas simples, alternas, lanceoladas u oblongolanceoladas, de consistencia algo coriácea, amargas y aromáticas, con el borde en ocasiones algo ondulado, ápice agudo y base atenuada.</p>
-            <p>Miden unos 3-9 cm de longitud y poseen corto peciolo. El haz es de color verde oscuro lustroso, mientras que el envés es más pálido. Las flores están dispuestas en umbelas sésiles de 4 a 6 flores; aparecen en marzo-abril, y son amarillentas. <strong>El fruto es drupáceo, ovoide, de 1 a 1,5 cm de longitud</strong>, tornándose de color negro en la madurez. Madura a principios de otoño.</p>
-            <blockquote>En la antigüedad clásica (Grecia y Roma), las coronas de laurel trenzado eran símbolo de victoria y gloria.</blockquote>
-            <p>Hoy por hoy, su cultivo se extiende por todo el área mediterránea hasta Asia Menor.</p>
-            <p>Las hojas del laurel se pueden usar frescas o secas, siendo más intenso el sabor de las secas. Las hojas se utilizan como condimento en muchas comidas, añadiéndose al comienzo de la cocción de guisos de carne, estofados, caldos de pescado, sopas de verduras y legumbres, porque cuanto más tiempo se hiervan mejor.</p>
+            <h2 data-textos="TituloLaurel"></h2>
+            <p data-textos="Contenido1"></p>
+            <p data-textos="Contenido2"></p>
+            <blockquote data-textos="cita"></blockquote>
+            <p data-textos="Contenido3"></p>
+            <p data-textos="Contenido4"></p>
           </div>
+       
           
     </main>
     <footer>
@@ -53,11 +60,11 @@
             <a href="index.html"><img src="img/logo.png" alt="LaurelDafne"></a>
         </div>
           <div class="footer-links">
-            <a href="aviso-legal.html">Aviso Legal</a>
-            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+            <a data-textos="AvisoLegal" href="aviso-legal.html"></a>
+            <a data-textos="Terminos" href="terminos-y-condiciones.html"></a>
           </div>
           <div class="footer-contact">
-            <p>Contacto: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></p>
+            <p> <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></p>
         </div>
 
     </footer>

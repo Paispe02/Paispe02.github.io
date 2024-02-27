@@ -13,31 +13,38 @@
 </head>
 <body>
     <header id="header" class="header">
-              
+
         <nav class="nav">
             <ul class="contenedor"> 
             <li class="logo"> <a href="index.html"> <img id="logo" src="/img/logo.png" alt="LaurelDafne"> </a></li>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a data-textos="Inicio" href="index.html"></a></li>
+            <li><a data-textos="Nosotros" href="nosotros.html"></a></li>
+            <li><a data-textos="Contacto" href="contacto.html"></a></li>
+            <li><select id="selector-idioma">
+                <option value ="es">Español</option>
+                <option value ="en">English</option> 
+                </select>
+            </li>
             </ul>
         </nav>
 </header>
 <main>
-    <h1>GRACIAS, en breve nos pondremos en contacto</h1>
+    <h1 data-textos="Texto">GRACIAS, en breve nos pondremos en contacto</h1>
 </main>
-    <footer>
-        <div class="footer-logo">
-            <a href="index.html"><img src="img/logo.png" alt="LaurelDafne"></a>
-        </div>
-          <div class="footer-links">
-            <a href="aviso-legal.html">Aviso Legal</a>
-            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
-          </div>
-          <div class="footer-contact">
-            <p>Contacto: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></p>
-        </div>
-    </footer>
+<footer>
+    <div class="footer-logo">
+        <a href="index.html"><img src="img/logo.png" alt="LaurelDafne"></a>
+    </div>
+      <div class="footer-links">
+        <a data-textos="AvisoLegal" href="aviso-legal.html"></a>
+        <a data-textos="Terminos" href="terminos-y-condiciones.html"></a>
+      </div>
+      <div class="footer-contact">
+        <p> <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></p>
+    </div>
+
+</footer>
+<script src="script.js"></script>
 </body>
 
 </html>

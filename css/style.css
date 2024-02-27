@@ -13,6 +13,21 @@ body{
     flex-direction: column;
 }
 
+#selector-idioma{
+  border-radius:4px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /*background-color: #567235;*/
+  background-color: rgba(30, 125, 20, 0);
+  border-color:#567235;
+  text-align: center;
+  cursor:pointer;
+  color:white;
+  border-width: 0.1em;
+  padding: 0.1em;
+  font-size: 0.8em;
+}
+
 img {
     max-width: 100%;
     display: block;
